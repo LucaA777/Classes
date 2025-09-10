@@ -1,0 +1,14 @@
+#include <iostream>
+#include "DigitalMedia.h"
+
+using namespace std;
+
+class VideoGame : public DigitalMedia{
+ public:
+  VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating);
+  char* getPublisher();
+  float getRating();
+ private:
+  char* publisher;
+  float rating;
+};
