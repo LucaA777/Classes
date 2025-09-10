@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
-
-  return 0;
+DigitalMedia::DigitalMedia() {
+  title = new char[80];
+  year = 0;
 }
