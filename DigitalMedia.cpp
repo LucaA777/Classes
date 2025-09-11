@@ -4,18 +4,19 @@
 
 using namespace std;
 
-DigitalMedia::DigitalMedia() {
+DigitalMedia::DigitalMedia(char* nTitle, int nYear) {
   title = new char[80];
-  year = 0;
+  strcpy(title, nTitle);
+  year = nYear;
 }
 
-void DigitalMedia::setTitle(char* newTitle) {
+void DigitalMedia::setTitle(char* nTitle) {
   title = new char[80];
-  strcpy(title, newTitle);
+  strcpy(title, nTitle);
 }
 
-void DigitalMedia::setYear(int newYear) {
-  year = newYear;
+void DigitalMedia::setYear(int nYear) {
+  year = nYear;
 }
 
 char* DigitalMedia::getTitle() {

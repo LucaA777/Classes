@@ -5,7 +5,7 @@
 using namespace std;
 
 
-VideoGame::VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating):DigitalMedia() {
+VideoGame::VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating):DigitalMedia(nTitle, nYear) {
   title = new char[80];
   strcpy(title, nTitle);
 

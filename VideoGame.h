@@ -1,5 +1,9 @@
 #include <iostream>
+
+#ifndef VIDEOGAME_H
+#define VIDEOGAME_H
 #include "DigitalMedia.h"
+#endif
 
 using namespace std;
 
