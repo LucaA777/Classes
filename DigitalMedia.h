@@ -8,10 +8,9 @@ using namespace std;
 class DigitalMedia {
  public:
   DigitalMedia(char* nTitle, int nYear);
-  void setTitle(char* nTitle);
-  void setYear(int nYear);
-  int getYear();
+  virtual void printAll();
   char* getTitle();
+  int getYear();
  protected:
   char* title;
   int year;

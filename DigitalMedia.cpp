@@ -10,13 +10,8 @@ DigitalMedia::DigitalMedia(char* nTitle, int nYear) {
   year = nYear;
 }
 
-void DigitalMedia::setTitle(char* nTitle) {
-  title = new char[80];
-  strcpy(title, nTitle);
-}
-
-void DigitalMedia::setYear(int nYear) {
-  year = nYear;
+void DigitalMedia::printAll() {
+  cout << title << ", " << year << "." << endl;
 }
 
 char* DigitalMedia::getTitle() {

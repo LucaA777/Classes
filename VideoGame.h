@@ -10,8 +10,7 @@ using namespace std;
 class VideoGame : public DigitalMedia{
  public:
   VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating);
-  char* getPublisher();
-  float getRating();
+  virtual void printAll();
  private:
   char* publisher;
   float rating;

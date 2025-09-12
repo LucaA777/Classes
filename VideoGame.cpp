@@ -17,10 +17,6 @@ VideoGame::VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating):D
   rating = nRating;
 }
 
-char* VideoGame::getPublisher() {
-  return publisher;
-}
-
-float VideoGame::getRating() {
-  return rating;
+void VideoGame::printAll() {
+  cout << title << ", " << year << ", " << publisher << ", " << rating << "." << endl;
 }
