@@ -11,8 +11,12 @@ class Movie : public DigitalMedia {
  public:
   Movie(char* nTitle, char* nDirector, int nYear, float nDuration, float nRating);
   virtual void printAll();
-
- private:
+  
+  //the following three functions aren't used but are required by the assignment
+  char* getDirector();
+  float getDuration();
+  float getRating();
+private:
   char* director;
   float duration;
   float rating;

@@ -21,3 +21,15 @@ Movie::Movie(char* nTitle, char* nDirector, int nYear, float nDuration, float nR
 void Movie::printAll() {
   cout << title << ", " << director << ", " << year << ", " << duration << ", " << rating << "." << endl;
 }
+
+char* Movie::getDirector() {
+  return director;
+}
+
+float Movie::getDuration() {
+  return duration;
+}
+
+float Movie::getRating() {
+  return rating;
+}

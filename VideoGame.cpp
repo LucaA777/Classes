@@ -20,3 +20,11 @@ VideoGame::VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating):D
 void VideoGame::printAll() {
   cout << title << ", " << year << ", " << publisher << ", " << rating << "." << endl;
 }
+
+char* VideoGame::getPublisher() {
+  return publisher;
+}
+
+float VideoGame::getRating() {
+  return rating;
+}

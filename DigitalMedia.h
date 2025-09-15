@@ -11,7 +11,8 @@ class DigitalMedia {
   virtual void printAll();
   char* getTitle();
   int getYear();
- protected:
+
+protected:
   char* title;
   int year;
 };

@@ -11,7 +11,12 @@ class VideoGame : public DigitalMedia{
  public:
   VideoGame(char* nTitle, int nYear, char* nPublisher, float nRating);
   virtual void printAll();
- private:
+
+  //the following two functions are not used but the assignments asks for them
+  char* getPublisher();
+  float getRating();
+  
+private:
   char* publisher;
   float rating;
 };
